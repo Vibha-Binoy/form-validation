@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+	<title>Felly Tone- Book Masterclass</title>
+	<link rel="stylesheet" type="text/css" href="felly_tone_css.css">
+	<script type="text/javascript">
+	function validate(){
+		var a=document.getElementById("number").value;
+		if(a>0 && a<11)
+		{
+			document.getElementById("error").innerHTML="Number is wrong!"
+		}
+		var pass=document.getElementById("pass").value
+		var comfirmpass=document.getElementById("retypepassword").value
+		 if(pass!=comfirmpass){
+		 	document.getElementById("errorpass").innerHTML="Password and retypepassword not matching!"
+		 }
+		 return false;
+	}
+</script>
+</head>
+<body>
+	<center>
+	<h1>Book your free trial class!</h1>
+	<p>To book a free class you will have to create an account in our website.By creating account you will also recieve daily updates and new courses!</p>
+	<form name="abc" method="post" onsubmit="return validate()">
+	<span>First Name:</span>
+	<input type="text" name="firstname" required placeholder="necessary" id="firstname"><br>
+    <span>Last Name:</span>
+	<input type="text" name="lastname" id="lastname"><br>
+	<span>Password:</span>
+	<input type="password" id="pass"><br>
+	<span>Confirm password:</span>
+	<input type="password" id="retypepassword"><br>
+	<p id="errorpass" class="error"></p>
+	<span>Age:</span>
+	<input type="number" ><br>
+	<span>Preferred date:</span>
+	<input type="date" ><br>
+	<h2>Captcha</h2>
+	<p>
+		Please enter a value in between 1 to 10
+	</p>
+	<input type="text" id="number"><br>
+		<p id="error" class="error"></p>
+	<input type="reset"><br>
+	<input type="submit" name="let me in"><br>
+	
+</form>
+</center>
+</body>
+</html>
