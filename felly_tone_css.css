@@ -1,0 +1,32 @@
+body{
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4m8d_xEXZ9VuVsH8jAaxYsV2coXa1AKT0wD_fkV2K08ZpGTlauyQA4dX46bDaAquS_OI&usqp=CAU");
+	background-image.opacity:1;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Alegreya Sans SC';
+	font-size:50px;
+}
+p,form{
+	font-family: 'Amaranth';
+	font-size:30px;
+}
+input{
+	width:100px;
+	height:40px;
+	background-color:#33cc33;
+	color:white;
+	border color:white;
+	border-width: 5px;
+    border-radius: 10px;
+}
+#error{
+	color:red;
+}
+#errorpass{
+	color:red;
+}
+.error{
+	color:red;
+}
